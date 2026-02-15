@@ -65,37 +65,38 @@ This is the main "Edge Mode" demo.
 bash
 python telegram_bot.py
 
-
+---
 Usage: Send a voice note or text to your bot.
 Try saying: "Schedule a meeting with the design team for 5pm."
 Result: The bot replies with audio and creates an event in 
 data/calendar.json
-.
+---
 2. The MCP Server (Archestra Mode) 🧠
 Run this to expose your tools to the Archestra Gateway.
-
+---
 bash
 python server.py
 Endpoint: Connect Archestra to http://localhost:8000/sse
 Tools Exposed: 
-schedule_event
-, trigger_alert, 
-create_ticket
-.
+schedule_event, trigger_alert, create_ticket.
+---
 Verify: Check the logs or the Dashboard to see tools being called.
 3. The Real-Time Dashboard 📊
 Visualize the system's thinking process.
-
+---
 bash
 python dashboard.py
 View: Open http://localhost:5000 in your browser.
 Action: Watch cards appear instantly as you interact with the bot.
+---
 🧪 Demo Scenarios
 Scenario	Action (Voice/Text)	Expected Outcome
 Normal Booking	"Book a table for 2 at 7pm."	Bot confirms via Audio + JSON updated.
 Conflict Handling	"Actually, make a booking for 7pm for John."	Bot warns: "Conflict detected! Prioritize?"
 Smart Links	"Schedule a Google Meet at 10am."	Bot generates: https://meet.google.com/...
 DevOps Alert	"Payment gateway is down! Trigger alert."	System logs HIGH PRIORITY alert to alerts.json.
+---
+
 📂 Project Structure
 context-os-archestra-hackathon/
 ├── data/                   # JSON state files (calendar, alerts, tickets)
@@ -104,5 +105,7 @@ context-os-archestra-hackathon/
 ├── multi_agent_system.py   # Legacy Logic (The Hands)
 ├── dashboard.py            # Visual UI
 └── requirements.txt        # Dependencies
+---
 Built with ❤️ for the Archestra Hackathon 2026
+
 
