@@ -1,0 +1,13 @@
+[
+  {
+    "id": "EVT-3d44",
+    "topic": "All-hands standup",
+    "time": "Monday 10am",
+    "participants": [
+      "Alice",
+      "Bob"
+    ],
+    "created_at": "2026-02-14T17:50:00.592046",
+    "status": "scheduled"
+  }
+]
