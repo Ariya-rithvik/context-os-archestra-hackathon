@@ -28,22 +28,22 @@
 ## 📦 Installation
 
 1.  **Clone the repository:**
-    ```bash
+  bash
     git clone [https://github.com/Ariya-rithvik/context-os-archestra-hackathon.git](https://github.com/Ariya-rithvik/context-os-archestra-hackathon.git)
     cd context-os-archestra-hackathon
-    ```
+ 
 
 2.  **Install dependencies:**
-    ```bash
+   bash
     pip install -r requirements.txt
-    ```
+   
     *(Note: Ensures you have `fastmcp`, `python-telegram-bot`, `google-generativeai`, `edge-tts`, etc.)*
 
 3.  **System Requirements:**
     *   **FFmpeg:** Required for voice processing. Ensure `ffmpeg` is in your system PATH.
-        *   *Windows:* `winget install ffmpeg`
-        *   *Mac:* `brew install ffmpeg`
-        *   *Linux:* `sudo apt install ffmpeg`
+        *   *Windows:* winget install ffmpeg
+        *   *Mac:* brew install ffmpeg
+        *   *Linux:* sudo apt install ffmpeg
 
 ---
 
@@ -62,7 +62,7 @@
 
 ### 1. The Voice Agent (Telegram) 🎙️
 This is the main "Edge Mode" demo.
-```bash
+bash
 python telegram_bot.py
 
 
@@ -105,3 +105,4 @@ context-os-archestra-hackathon/
 ├── dashboard.py            # Visual UI
 └── requirements.txt        # Dependencies
 Built with ❤️ for the Archestra Hackathon 2026
+
